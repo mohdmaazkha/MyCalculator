@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Calculator</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color:  darkgray;
+    
+}
+.calculator{
+    max-width: 500px;
+    border-radius: 20px;
+    background-color:  darkgray;
+
+}
+#display{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: left;
+    overflow: hidden;
+    
+    
+
+}
+
+.key{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: darkgray;
+}
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(85, 82, 75);
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 100;
+}
+button:hover{
+    color: rgb(36, 36, 10);
+}
+#operator-id:active{
+    color: rgb(36, 36, 10);
+}
+#operator-id{
+    background-color: rgb(211, 142, 133);
+    font-family: bold;
+}
+h2{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+        </style>
 </head>
 <body>
     <div class="calculator">
